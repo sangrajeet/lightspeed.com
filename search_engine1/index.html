@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightspeed</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+
+body{
+      background-image: url(images/wp7628266.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
+h4 {
+  color: white; 
+  font-style: italic;
+}
+.search {
+    margin: 0 auto;
+    text-align: center;
+}
+.search h4{
+    margin: 50px 0px 20px 0px;
+    font-size: 30px;
+}
+
+.search input[type=text]{
+    width: 60%;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: solid 1px pink;
+}
+
+.search a{
+  background-color: rgba(0, 0, 0, 0.363);
+  margin-top: 20px;
+  width: 100px;
+  text-align: center;
+  margin-left: 5px;
+}
+.search a:hover{
+  background-color: rgba(0, 0, 0, 0.589);
+}
+</style>
+
+<body>
+      <!--Search Bar-->
+
+      <div class="search">
+        <h4>Lightspeed</h4>
+        <input id="search" type="text" placeholder="Search..."><br>
+        <a href="#" class="btn" onclick="dict()">Dictionary</a>
+        <a href="#" class="btn" onclick="scholar()">Scholar</a>
+        <a href="#" class="btn" onclick="anime()">Anime</a>
+        <a href="#" class="btn" onclick="video()">Videos</a>
+        <a href="#" class="btn" onclick="music()">Music</a>
+        <a href="#" class="btn" onclick="mv()">Movies</a>
+        <a href="#" class="btn" onclick="tv()">TV Shows</a>
+        <a href="#" class="btn" onclick="others()">Others...</a>
+      </div>
+
+<!--Javascript-->
+<script>
+  function dict(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://dictionary.cambridge.org/dictionary/english/";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+
+  function scholar(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+  function anime(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://wcostream.cc/search/?keyword=";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+  function video(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://www.youtube.com/results?search_query=";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+  function music(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://www.midomi.com/TextSearchResults?term=";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+  function mv(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://123moviesgo.ac/search/";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+  function tv(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://123moviesgo.ac/search/";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+  function others(){
+    var x = document.getElementById("search").value;//store search keyword
+    const url = "https://www.google.com/search?q=";
+    var url1 = url + x;
+    var win = window.open(url1, '_blank');
+    win.focus;
+  }
+
+</script>
+
+</body>
+</html>
